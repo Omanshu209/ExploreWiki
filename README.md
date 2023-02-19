@@ -10,12 +10,16 @@ This is a Python application that allows the user to search for information and 
 3)wikipedia
 
 ### You can install them using pip
-> pip install kivy kivymd wikipedia
+```
+pip install kivy kivymd wikipedia
+```
 
 ## How to Use
 To start the app, run the TXTsearchEngine_code.py file
 ### Or run this in the terminal
-> python3 TXTsearchEngine_code.py
+```
+python3 TXTsearchEngine_code.py
+```
 
 The app will display a search bar where you can enter a query. When you click on the "Search" button, the app will retrieve information and display it in the output screen. If there is an error retrieving the information, the app will display an error message.
 You can also click on the "Open URL" button to open a web page in your default web browser. This will open a popup window where you can enter the URL you want to open.
