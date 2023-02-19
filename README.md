@@ -25,4 +25,4 @@ The app will display a search bar where you can enter a query. When you click on
 You can also click on the "Open URL" button to open a web page in your default web browser. This will open a popup window where you can enter the URL you want to open.
 
 ## Credits 
-This app was developed by **Omanshu.
+This app was developed by **Omanshu**.
