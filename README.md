@@ -1,12 +1,11 @@
 Text Search Engine [TXTsearchEngine] :
 This is a Python application that allows the user to search for information and open URLs. The app uses the KivyMD framework for the GUI.
 
-Installation and Dependencies
-
+Installation and Dependencies :
 To run the app, you need to have Python 3 and the following libraries installed :
-kivy
-kivymd
-wikipedia
+1)kivy,
+2)kivymd,
+3)wikipedia
 
 You can install them using pip :
 pip install kivy kivymd wikipedia
