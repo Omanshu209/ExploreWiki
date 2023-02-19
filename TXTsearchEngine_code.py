@@ -1,10 +1,39 @@
 from kivymd.app import MDApp
 from kivy.lang import Builder
-from kivymd.uix.screenmanager import MDScreenManager
-from kivymd.uix.screen import MDScreen
 import wikipedia as info
+from kivy.uix.popup import Popup
+import webbrowser as wb
 
 KV="""
+<URLPopup>:
+    url: ''
+    size_hint: None, None
+    size: 400, 200
+    title: 'URL Opener'
+    auto_dismiss: False
+
+    MDBoxLayout:
+        orientation: 'vertical'
+        padding: 20
+        
+        MDTextField:
+            hint_text: 'Enter URL [ \"https://\" at the starting is required]'
+            size_hint: (None, None)
+            mode:'rectangle'
+            width: 350
+            on_text: root.url = self.text
+        
+        MDBoxLayout:
+            padding: 0
+            spacing:10
+            
+            MDRectangleFlatButton:
+                text: 'Submit'
+                on_release: app.search_url(root.url)
+            
+            MDRectangleFlatButton:
+                text: 'Cancel'
+                on_release: root.dismiss()
 MDScreen:
 	
 	MDTextField:
@@ -29,6 +58,13 @@ MDScreen:
 			except:root.ids.output_screen.text=app.error_msg(question)
 			
 	MDRoundFlatButton:
+		text:'Open URL' 
+		pos_hint:{'center_x':.7,'center_y':.89}
+		size_hint:.15,.04
+		on_release:
+			app.on_url_button_press(self)
+			
+	MDRoundFlatButton:
 		text:'Clear' 
 		pos_hint:{'center_x':.95,'center_y':.96}
 		size_hint:.09,.004
@@ -43,7 +79,7 @@ MDScreen:
 		padding:25
 		spacing:25
 		orientation:'vertical' 
-		
+
 		MDScrollView:
 			do_scroll_x:False 
 			do_scroll_y:True
@@ -65,14 +101,33 @@ MDScreen:
 		bold:True
 
 """
+class URLPopup(Popup):
+    pass
 
 class MainApp(MDApp):
 	def build(self):
 		self.theme_cls.theme_style='Dark' 
 		self.theme_cls.primary_palette='DeepPurple'
 		return Builder.load_string(KV)
+		
 	def error_msg(self,topic):
 		return f"ERROR\n\n\nPossible reasons for the error:\n\n1) No Internet Connection\n3) Spelling of \"{topic}\" might be incorrect \n2) Information might not be available for \"{topic}\""
+		
+	def on_url_button_press(self,button):
+	    popup = URLPopup()
+	    popup.open()
+	    
+	def search_url(self,url):
+		if 'https' in url:
+			try:
+				wb.open(url)
+			except:
+				pass
+		else:
+			try:
+				wb.open("https://"+url)
+			except:
+				pass
 	
 if __name__=='__main__':
 	MainApp().run()
