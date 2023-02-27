@@ -1,6 +1,5 @@
 from kivymd.app import MDApp
 from kivy.lang import Builder
-import wikipedia as info
 from kivy.uix.popup import Popup
 import webbrowser as wb
 
