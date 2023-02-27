@@ -4,15 +4,17 @@ This is a Python application that allows the user to search for information and 
 
 ## Installation and Dependencies
 ### To run the app, you need to have Python 3 and the following libraries installed :
-1)kivy
+1)kivy[v2.0.0]
 
-2)kivymd
+2)kivymd[v1.1.1]
 
-3)wikipedia
+3)wikipedia[v1.4.0]
+
+4)webbrowser[Built-In in python]
 
 ### You can install them using pip
 ```
-pip install kivy kivymd wikipedia
+pip install kivy==2.0.0 kivymd==1.1.1 wikipedia==1.4.0
 ```
 
 ## How to Use
