@@ -1,6 +1,8 @@
 # Text-Based Search Engine [TXTsearchEngine]
 This is a Python application that allows the user to search for information and open URLs. The app uses the KivyMD framework for the GUI.
-![Screenshot_2023-02-19-15-16-52-753](https://user-images.githubusercontent.com/114089324/219940806-631b00d5-73e2-47a5-8160-cd8ec553ac56.jpeg)
+
+![Screenshot_2023-03-12-18-58-28-228](https://user-images.githubusercontent.com/114089324/231769154-e3a5418b-a38c-4234-9134-e45b78e9b8cb.jpeg)
+
 
 ## Installation and Dependencies
 ### To run the app, you need to have Python 3 and the following libraries installed :
