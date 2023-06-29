@@ -5,7 +5,8 @@ This is a Python application that allows the user to search for information and 
 
 
 ## Installation and Dependencies
-### To run the app, you need to have Python 3 and the following libraries installed :
+To run the app, you need to have Python 3 and the following libraries installed :
+```
 1) kivy [v2.0.0]
 
 2) kivymd [v1.1.1]
@@ -13,7 +14,7 @@ This is a Python application that allows the user to search for information and 
 3) wikipedia [v1.4.0]
 
 4) webbrowser [Built-In in python]
-
+```
 ### You can install them using pip
 ```
 pip install kivy==2.0.0 kivymd==1.1.1 wikipedia==1.4.0
@@ -23,7 +24,7 @@ pip install kivy==2.0.0 kivymd==1.1.1 wikipedia==1.4.0
 To start the app, run the TXTsearchEngine_code.py file
 ### Or run this in the terminal
 ```
-python3 TXTsearchEngine_code.py
+python3 ExploreWiki_code.py.py
 ```
 
 The app will display a search bar where you can enter a query. When you click on the "Search" button, the app will retrieve information and display it in the output screen. If there is an error retrieving the information, the app will display an error message.
