@@ -21,7 +21,7 @@ pip install kivy==2.0.0 kivymd==1.1.1 wikipedia==1.4.0
 ```
 
 ## How to Use
-To start the app, run the TXTsearchEngine_code.py file
+To start the app, run the `ExploreWiki_code.py` file
 ### Or run this in the terminal
 ```
 python3 ExploreWiki_code.py.py
