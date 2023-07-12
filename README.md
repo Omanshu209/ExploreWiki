@@ -1,5 +1,5 @@
 # ExploreWiki
-This is a Python application that allows the user to search for information and open URLs. The app uses the KivyMD framework for the GUI.
+This is a Python application that allows the user to `search for information` and `open URLs`. The app uses the `KivyMD framework` for the GUI.
 
 ![Screenshot_2023-03-12-18-58-28-228](https://user-images.githubusercontent.com/114089324/231769154-e3a5418b-a38c-4234-9134-e45b78e9b8cb.jpeg)
 
@@ -27,8 +27,8 @@ To start the app, run the `main.py` file
 python3 main.py
 ```
 
-The app will display a search bar where you can enter a query. When you click on the "Search" button, the app will retrieve information and display it in the output screen. If there is an error retrieving the information, the app will display an error message.
-You can also click on the "Open URL" button to open a web page in your default web browser. This will open a popup window where you can enter the URL you want to open.
+The app will display a search bar where you can `enter a query`. When you `click on the "Search" button`, the app will retrieve information and display it in the output screen. If there is an error retrieving the information, the app will display an error message.
+You can also `click on the "Open URL" button` to open a web page in your default web browser. This will open a `popup window` where you can `enter the URL` you want to open.
 ![Screenshot_2023-02-19-15-17-43-779](https://user-images.githubusercontent.com/114089324/219940848-5634bc1c-4b62-4754-82cc-38a3dc3d83ff.jpeg)
 
 ## Credits 
