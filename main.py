@@ -18,13 +18,13 @@ class MainApp(MDApp):
 		question = self.root.ids.search_bar.text
 		try:
 			self.root.ids.output_screen.text = info.summary(question)
-		except:
+		except Exception:
 			self.root.ids.output_screen.text = self.error_msg(question)
 	
 	def error_msg(self,topic):
 		return f"ERROR\n\n\nPossible reasons for the error:\n\n1) No Internet Connection\n2) Spelling of \"{topic}\" might be incorrect \n3) Information might not be available for \"{topic}\"\n4) The server might be under maintainance"
 		
-	def on_url_button_press(self,button):
+	def on_url_button_press(self):
 	    popup = URLPopup()
 	    popup.open()
 	    
@@ -32,12 +32,12 @@ class MainApp(MDApp):
 		if 'https' in url:
 			try:
 				wb.open(url)
-			except:
+			except Exception:
 				pass
 		else:
 			try:
 				wb.open("https://"+url)
-			except:
+			except Exception:
 				pass
 	
 if __name__ == '__main__':
