@@ -17,6 +17,10 @@ To run the app, you need to have Python 3 and the following libraries installed 
 ```
 ### You can install them using pip
 ```
+pip install -r requirements.txt
+```
+**OR**
+```
 pip install kivy==2.0.0 kivymd==1.1.1 wikipedia==1.4.0
 ```
 
