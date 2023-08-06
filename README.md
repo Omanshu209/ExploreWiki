@@ -13,7 +13,9 @@ To run the app, you need to have Python 3 and the following libraries installed 
 
 3) wikipedia [v1.4.0]
 
-4) webbrowser [Built-In in python]
+4) langchain [v0.0.253]
+
+5) webbrowser [Built-In in python]
 ```
 ### You can install them using pip
 ```
@@ -21,7 +23,7 @@ pip install -r requirements.txt
 ```
 **OR**
 ```
-pip install kivy==2.0.0 kivymd==1.1.1 wikipedia==1.4.0
+pip install kivy==2.0.0 kivymd==1.1.1 wikipedia==1.4.0 langchain==0.0.253
 ```
 
 ## How to Use
