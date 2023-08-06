@@ -11,21 +11,19 @@ class URLPopup(Popup):
 class MainApp(MDApp):
 	
 	def build(self):
-		self.wikipedia = WikipediaQueryRun(api_wrapper=WikipediaAPIWrapper())
-		self.question = ""
+		self.wikipedia = WikipediaQueryRun(api_wrapper = WikipediaAPIWrapper())
 		self.theme_cls.theme_style = 'Dark' 
 		self.theme_cls.primary_palette = 'DeepPurple'
 		return Builder.load_file("Design.kv")
 		
 	def search(self):
-		self.question = self.root.ids.search_bar.text
 		try:
-			self.root.ids.output_screen.text = self.wikipedia.run(self.question)
+			self.root.ids.output_screen.text = self.wikipedia.run(self.root.ids.search_bar.text)
 		except Exception:
-			self.root.ids.output_screen.text = self.error_msg(self.question)
+			self.root.ids.output_screen.text = self.error_msg()
 	
-	def error_msg(self,topic):
-		return f"ERROR\n\n\nPossible reasons for the error:\n\n1) No Internet Connection\n2) Spelling of \"{topic}\" might be incorrect \n3) Information might not be available for \"{topic}\"\n4) The server might be under maintainance"
+	def error_msg(self):
+		return "ERROR\n\n\nPossible reasons for the error:\n\n1) No Internet Connection\n2) The server might be under maintainance"
 		
 	def on_url_button_press(self):
 	    popup = URLPopup()
