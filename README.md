@@ -1,8 +1,12 @@
-# ExploreWiki
+<div align = "center">
+  <h1>
+    ExploreWiki
+  </h1>
+</div>
+
 This is a Python application that allows the user to `search for information` and `open URLs`. The app uses the `KivyMD framework` for the GUI.
 
 ![Screenshot_2023-03-12-18-58-28-228](https://user-images.githubusercontent.com/114089324/231769154-e3a5418b-a38c-4234-9134-e45b78e9b8cb.jpeg)
-
 
 ## Installation and Dependencies
 To run the app, you need to have Python 3 and the following libraries installed :
